@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreolink | Connecter nos racines, éclairer notre futur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=League+Spartan:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --vert-fromager: #1A3C34;
+            --or-connexion: #D4AF37;
+            --sable-nacre: #F5F5DC;
+        }
+        body {
+            font-family: 'League Spartan', sans-serif;
+            background-color: var(--vert-fromager);
+            color: var(--sable-nacre);
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-display {
+            font-family: 'Bebas Neue', cursive;
+        }
+        .btn-gold {
+            background-color: var(--or-connexion);
+            color: var(--vert-fromager);
+            transition: all 0.3s ease;
+        }
+        .btn-gold:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+        .text-gold {
+            color: var(--or-connexion);
+        }
+        .bg-sable {
+            background-color: var(--sable-nacre);
+            color: var(--vert-fromager);
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-vert-fromager/90 backdrop-blur-md">
+        <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-full border border-gold overflow-hidden shadow-lg">
+                 <!-- Chemin mis à jour vers assets/images/ -->
+                 <img src="assets/images/Kreolink_icon.jpg" alt="Logo Kreolink" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=K'">
+            </div>
+            <span class="font-display text-2xl tracking-wider">KREOLINK</span>
+        </div>
+        <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest font-bold">
+            <a href="#concept" class="hover:text-gold transition">Le Concept</a>
+            <a href="#apropos" class="hover:text-gold transition">L'Origine</a>
+            <a href="#vision" class="hover:text-gold transition">Technologie</a>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil (Hero) -->
+    <header class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+        <div class="relative z-10 max-w-4xl">
+            <div class="mb-12 inline-block">
+                <!-- Chemin mis à jour vers assets/images/ -->
+                <img src="assets/images/Kreolink_complet_slogan.jpg" alt="Kreolink Banner" class="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/5" onerror="this.style.display='none'">
+            </div>
+            <h1 class="text-6xl md:text-9xl mb-4 tracking-tighter leading-none">CONNECTER NOS RACINES</h1>
+            <p class="text-lg md:text-2xl text-gold font-light italic mb-12 tracking-[0.2em] uppercase">
+                Éclairer notre futur • Pont numérique caribéen
+            </p>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="#concept" class="btn-gold px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm shadow-xl hover:shadow-gold/20 text-center">Explorer le concept</a>
+                <a href="#apropos" class="border border-white/20 px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition text-center">Découvrir l'histoire</a>
+            </div>
+        </div>
+        <!-- Décoration d'arrière-plan -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 blur-[150px] -z-0 animate-pulse"></div>
+    </header>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="py-24 px-6 bg-sable">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                <h2 class="text-5xl md:text-7xl mb-8 leading-none text-vert-fromager">DE KARUKERA AU <br><span class="text-gold" style="filter: brightness(0.8);">MONDE NUMÉRIQUE</span></h2>
+                <div class="space-y-6 text-lg leading-relaxed text-vert-fromager/80">
+                    <p>
+                        D'origine guadeloupéenne et chef de projet en informatique, j'ai conçu <strong>Kreolink</strong> comme une réponse à un besoin personnel : rester connectée à mon archipel tout en embrassant les outils de demain.
+                    </p>
+                    <p>
+                        C’est la rencontre entre la rigueur de l'ingénierie et la passion pour la culture caribéenne. En tant que créatrice, j'ai choisi de rester dans l'ombre pour laisser toute la lumière à l'information et à l'authenticité de nos récits.
+                    </p>
+                    <p class="font-bold text-vert-fromager">
+                        Ma mission : Transformer la donnée en émotion, et la distance en proximité grâce à l'IA.
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="aspect-square bg-vert-fromager rounded-3xl overflow-hidden border-[12px] border-white shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
+                    <!-- Chemin mis à jour vers assets/images/ -->
+                    <img src="assets/images/KREOLINK_v1.jpg" alt="Art Arbre Fromager" class="w-full h-full object-cover">
+                </div>
+                <!-- Badge flottant -->
+                <div class="absolute -bottom-6 -left-6 bg-gold text-vert-fromager p-6 rounded-2xl shadow-xl font-display text-2xl">
+                    100% CARAÏBE
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Concept (Cercle d'Or) -->
+    <section id="concept" class="py-32 px-6 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-7xl mb-4 text-center">Notre Cercle d'Or</h2>
+                <div class="h-1 w-24 bg-gold mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pourquoi -->
+                <div class="glass p-10 rounded-3xl text-center group hover:bg-white/5 transition">
+                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-white/10 group-hover:border-gold transition">
+                        <span class="text-3xl">🌍</span>
+                    </div>
+                    <h3 class="text-3xl mb-6 tracking-wide">Pourquoi</h3>
+                    <p class="opacity-70 leading-relaxed italic">Réduire la distance physique et émotionnelle entre la diaspora et la terre natale.</p>
+                </div>
+                <!-- Comment -->
+                <div class="bg-gold p-10 rounded-3xl text-center shadow-2xl shadow-gold/10 scale-105 z-10 text-vert-fromager">
+                    <div class="w-16 h-16 bg-vert-fromager rounded-2xl flex items-center justify-center mx-auto mb-8">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+                    <h3 class="text-3xl mb-6 tracking-wide">Comment</h3>
+                    <p class="leading-relaxed font-bold">Un pont numérique fiable utilisant la puissance de l'IA pour synthétiser l'actualité.</p>
+                </div>
+                <!-- Quoi -->
+                <div class="glass p-10 rounded-3xl text-center group hover:bg-white/5 transition">
+                    <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-white/10 group-hover:border-gold transition">
+                        <span class="text-3xl">📱</span>
+                    </div>
+                    <h3 class="text-3xl mb-6 tracking-wide">Quoi</h3>
+                    <p class="opacity-70 leading-relaxed italic">L'essentiel de l'info caribéenne condensée en formats vidéos impactants.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Vision et IA -->
+    <section id="vision" class="py-24 px-6 bg-black/20 border-y border-white/5">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-20">
+            <div class="md:w-1/2">
+                <h2 class="text-5xl md:text-6xl mb-8 leading-tight">L'INGÉNIERIE <br>AU SERVICE DU RÉCIT</h2>
+                <p class="mb-10 opacity-70 text-xl font-light leading-relaxed">
+                    Nous automatisons la veille grâce à <span class="text-gold font-bold">NotebookLM</span>, permettant de traiter des milliers de sources locales pour n'en extraire que la substance nécessaire à la diaspora.
+                </p>
+                <div class="space-y-8">
+                    <div class="flex gap-6 items-start text-left">
+                        <div class="text-gold font-display text-4xl leading-none">01</div>
+                        <div>
+                            <p class="font-bold text-lg mb-1 tracking-wide">VEILLE AUGMENTÉE</p>
+                            <p class="opacity-50 text-sm">Curation intelligente des sources officielles et médias locaux de tout l'archipel.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start text-left">
+                        <div class="text-gold font-display text-4xl leading-none">02</div>
+                        <div>
+                            <p class="font-bold text-lg mb-1 tracking-wide">SYNTHÈSE SCRIPTÉE</p>
+                            <p class="opacity-50 text-sm">Adaptation des récits complexes pour un format vidéo court, dynamique et impactant.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6 items-start text-left">
+                        <div class="text-gold font-display text-4xl leading-none">03</div>
+                        <div>
+                            <p class="font-bold text-lg mb-1 tracking-wide">PRODUCTION FACELESS</p>
+                            <p class="opacity-50 text-sm">Focus total sur l'image et le message. La technologie s'efface devant la culture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <div class="bg-gradient-to-br from-gold/20 to-transparent p-1 rounded-[40px]">
+                    <div class="bg-vert-fromager p-12 rounded-[38px] text-center border border-white/10 shadow-inner">
+                        <div class="mb-6 inline-block p-6 bg-white/5 rounded-full">
+                            <svg class="w-16 h-16 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <p class="font-display text-5xl text-gold mb-2">INTELLIGENCE</p>
+                        <p class="opacity-40 uppercase tracking-[0.3em] text-xs font-bold">Propulsé par Google AI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page (Footer) -->
+    <footer id="contact" class="py-24 text-center">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <!-- Chemin mis à jour vers assets/images/ -->
+            <img src="assets/images/Kreolink_horizontal.jpg" alt="Kreolink Logo" class="h-16 mx-auto mb-16 opacity-80 hover:opacity-100 transition duration-500">
+            <p class="font-display text-4xl mb-10 tracking-[0.2em] text-center">REJOIGNEZ LE MOUVEMENT</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 mb-16 text-xs uppercase tracking-[0.25em] font-bold">
+                <a href="#" class="text-white/40 hover:text-gold transition text-center">Instagram <span class="text-[10px] opacity-50 block mt-1">(Bientôt)</span></a>
+                <a href="#" class="text-white/40 hover:text-gold transition text-center">YouTube <span class="text-[10px] opacity-50 block mt-1">(Bientôt)</span></a>
+                <a href="https://github.com/KarukeraGirl/Kreolink" target="_blank" class="text-white/40 hover:text-gold transition underline decoration-gold/30 text-center">GitHub Project</a>
+            </div>
+            <div class="pt-12 border-t border-white/5 text-center">
+                <!-- Année mise à jour à 2026 -->
+                <p class="text-[10px] opacity-30 tracking-[0.4em] uppercase text-center">
+                    © 2026 • KREOLINK • CONNECTER NOS RACINES, ÉCLAIRER NOTRE FUTUR <br>
+                    CONÇU AVEC AMOUR ET CODE EN GUADELOUPE.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
