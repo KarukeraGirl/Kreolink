@@ -47,11 +47,10 @@
 <body class="antialiased">
 
     <!-- Navigation -->
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-vert-fromager/90 backdrop-blur-md">
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto sticky top-0 z-50 bg-vert-fromager/90 backdrop-blur-md" role="navigation">
         <div class="flex items-center gap-4">
             <div class="w-10 h-10 rounded-full border border-gold overflow-hidden shadow-lg">
-                 <!-- Chemin mis à jour vers assets/images/ -->
-                 <img src="assets/images/Kreolink_icon.jpg" alt="Logo Kreolink" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=K'">
+                 <img src="assets/images/Kreolink_icon.jpg" alt="Logo icône Kreolink représentant l'arbre connecté" class="w-full h-full object-cover" onerror="this.src='https://via.placeholder.com/150?text=K'">
             </div>
             <span class="font-display text-2xl tracking-wider">KREOLINK</span>
         </div>
@@ -66,8 +65,7 @@
     <header class="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
         <div class="relative z-10 max-w-4xl">
             <div class="mb-12 inline-block">
-                <!-- Chemin mis à jour vers assets/images/ -->
-                <img src="assets/images/Kreolink_complet_slogan.jpg" alt="Kreolink Banner" class="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/5" onerror="this.style.display='none'">
+                <img src="assets/images/Kreolink_complet_slogan.jpg" alt="Kreolink - Connecter nos racines, éclairer notre futur" class="w-full max-w-2xl mx-auto rounded-2xl shadow-2xl border border-white/5" onerror="this.style.display='none'">
             </div>
             <h1 class="text-6xl md:text-9xl mb-4 tracking-tighter leading-none">CONNECTER NOS RACINES</h1>
             <p class="text-lg md:text-2xl text-gold font-light italic mb-12 tracking-[0.2em] uppercase">
@@ -78,7 +76,6 @@
                 <a href="#apropos" class="border border-white/20 px-12 py-5 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-white/10 transition text-center">Découvrir l'histoire</a>
             </div>
         </div>
-        <!-- Décoration d'arrière-plan -->
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold/5 blur-[150px] -z-0 animate-pulse"></div>
     </header>
 
@@ -101,10 +98,8 @@
             </div>
             <div class="md:w-1/2 relative">
                 <div class="aspect-square bg-vert-fromager rounded-3xl overflow-hidden border-[12px] border-white shadow-2xl rotate-3 transition-transform hover:rotate-0 duration-500">
-                    <!-- Chemin mis à jour vers assets/images/ -->
-                    <img src="assets/images/KREOLINK_v1.jpg" alt="Art Arbre Fromager" class="w-full h-full object-cover">
+                    <img src="assets/images/KREOLINK_v1.jpg" alt="Représentation artistique de l'arbre Fromager symbolisant les racines et la connexion" class="w-full h-full object-cover">
                 </div>
-                <!-- Badge flottant -->
                 <div class="absolute -bottom-6 -left-6 bg-gold text-vert-fromager p-6 rounded-2xl shadow-xl font-display text-2xl">
                     100% CARAÏBE
                 </div>
@@ -120,26 +115,23 @@
                 <div class="h-1 w-24 bg-gold mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Pourquoi -->
                 <div class="glass p-10 rounded-3xl text-center group hover:bg-white/5 transition">
                     <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-white/10 group-hover:border-gold transition">
-                        <span class="text-3xl">🌍</span>
+                        <span class="text-3xl" aria-hidden="true">🌍</span>
                     </div>
                     <h3 class="text-3xl mb-6 tracking-wide">Pourquoi</h3>
                     <p class="opacity-70 leading-relaxed italic">Réduire la distance physique et émotionnelle entre la diaspora et la terre natale.</p>
                 </div>
-                <!-- Comment -->
                 <div class="bg-gold p-10 rounded-3xl text-center shadow-2xl shadow-gold/10 scale-105 z-10 text-vert-fromager">
                     <div class="w-16 h-16 bg-vert-fromager rounded-2xl flex items-center justify-center mx-auto mb-8">
-                        <span class="text-3xl">⚡</span>
+                        <span class="text-3xl" aria-hidden="true">⚡</span>
                     </div>
                     <h3 class="text-3xl mb-6 tracking-wide">Comment</h3>
                     <p class="leading-relaxed font-bold">Un pont numérique fiable utilisant la puissance de l'IA pour synthétiser l'actualité.</p>
                 </div>
-                <!-- Quoi -->
                 <div class="glass p-10 rounded-3xl text-center group hover:bg-white/5 transition">
                     <div class="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-8 border border-white/10 group-hover:border-gold transition">
-                        <span class="text-3xl">📱</span>
+                        <span class="text-3xl" aria-hidden="true">📱</span>
                     </div>
                     <h3 class="text-3xl mb-6 tracking-wide">Quoi</h3>
                     <p class="opacity-70 leading-relaxed italic">L'essentiel de l'info caribéenne condensée en formats vidéos impactants.</p>
@@ -151,7 +143,7 @@
     <!-- Section Vision et IA -->
     <section id="vision" class="py-24 px-6 bg-black/20 border-y border-white/5">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-20">
-            <div class="md:w-1/2">
+            <div class="md:w-1/2 text-left">
                 <h2 class="text-5xl md:text-6xl mb-8 leading-tight">L'INGÉNIERIE <br>AU SERVICE DU RÉCIT</h2>
                 <p class="mb-10 opacity-70 text-xl font-light leading-relaxed">
                     Nous automatisons la veille grâce à <span class="text-gold font-bold">NotebookLM</span>, permettant de traiter des milliers de sources locales pour n'en extraire que la substance nécessaire à la diaspora.
@@ -160,21 +152,21 @@
                     <div class="flex gap-6 items-start text-left">
                         <div class="text-gold font-display text-4xl leading-none">01</div>
                         <div>
-                            <p class="font-bold text-lg mb-1 tracking-wide">VEILLE AUGMENTÉE</p>
+                            <p class="font-bold text-lg mb-1 tracking-wide uppercase">Veille Augmentée</p>
                             <p class="opacity-50 text-sm">Curation intelligente des sources officielles et médias locaux de tout l'archipel.</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start text-left">
                         <div class="text-gold font-display text-4xl leading-none">02</div>
                         <div>
-                            <p class="font-bold text-lg mb-1 tracking-wide">SYNTHÈSE SCRIPTÉE</p>
+                            <p class="font-bold text-lg mb-1 tracking-wide uppercase">Synthèse Scriptée</p>
                             <p class="opacity-50 text-sm">Adaptation des récits complexes pour un format vidéo court, dynamique et impactant.</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start text-left">
                         <div class="text-gold font-display text-4xl leading-none">03</div>
                         <div>
-                            <p class="font-bold text-lg mb-1 tracking-wide">PRODUCTION FACELESS</p>
+                            <p class="font-bold text-lg mb-1 tracking-wide uppercase">Production Faceless</p>
                             <p class="opacity-50 text-sm">Focus total sur l'image et le message. La technologie s'efface devant la culture.</p>
                         </div>
                     </div>
@@ -184,7 +176,7 @@
                 <div class="bg-gradient-to-br from-gold/20 to-transparent p-1 rounded-[40px]">
                     <div class="bg-vert-fromager p-12 rounded-[38px] text-center border border-white/10 shadow-inner">
                         <div class="mb-6 inline-block p-6 bg-white/5 rounded-full">
-                            <svg class="w-16 h-16 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-16 h-16 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
@@ -199,16 +191,14 @@
     <!-- Pied de page (Footer) -->
     <footer id="contact" class="py-24 text-center">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <!-- Chemin mis à jour vers assets/images/ -->
-            <img src="assets/images/Kreolink_horizontal.jpg" alt="Kreolink Logo" class="h-16 mx-auto mb-16 opacity-80 hover:opacity-100 transition duration-500">
+            <img src="assets/images/Kreolink_horizontal.jpg" alt="Logo horizontal Kreolink" class="h-16 mx-auto mb-16 opacity-80 hover:opacity-100 transition duration-500">
             <p class="font-display text-4xl mb-10 tracking-[0.2em] text-center">REJOIGNEZ LE MOUVEMENT</p>
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 mb-16 text-xs uppercase tracking-[0.25em] font-bold">
                 <a href="#" class="text-white/40 hover:text-gold transition text-center">Instagram <span class="text-[10px] opacity-50 block mt-1">(Bientôt)</span></a>
                 <a href="#" class="text-white/40 hover:text-gold transition text-center">YouTube <span class="text-[10px] opacity-50 block mt-1">(Bientôt)</span></a>
-                <a href="https://github.com/KarukeraGirl/Kreolink" target="_blank" class="text-white/40 hover:text-gold transition underline decoration-gold/30 text-center">GitHub Project</a>
+                <a href="https://github.com/KarukeraGirl/Kreolink" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-gold transition underline decoration-gold/30 text-center">GitHub Project</a>
             </div>
             <div class="pt-12 border-t border-white/5 text-center">
-                <!-- Année mise à jour à 2026 -->
                 <p class="text-[10px] opacity-30 tracking-[0.4em] uppercase text-center">
                     © 2026 • KREOLINK • CONNECTER NOS RACINES, ÉCLAIRER NOTRE FUTUR <br>
                     CONÇU AVEC AMOUR ET CODE EN GUADELOUPE.
